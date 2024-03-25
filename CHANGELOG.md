@@ -1,5 +1,32 @@
 # gulp changelog
 
+## [4.0.0](https://www.github.com/nagyist/gulp/compare/v3.8.7...v4.0.0) (2024-03-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* Normalize repository, dropping node <10.13 support (#2758)
+
+### Features
+
+* Support `.cjs` extension for gulpfiles ([72668c6](https://www.github.com/nagyist/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d))
+
+
+### Bug Fixes
+
+* Add support for gulp.watch usage w/o opts or callback ([9fc4125](https://www.github.com/nagyist/gulp/commit/9fc412590747b5e20b4c5b52f59446aaf84632f9))
+* Bind src/dest/symlink to the gulp instance to support esm exports (ref standard-things/esm[#797](https://www.github.com/nagyist/gulp/issues/797)) ([5667666](https://www.github.com/nagyist/gulp/commit/5667666ffae15c169f99c7096ca59c05f9440272))
+* Ensure watch allows japanese characters in globs ([72668c6](https://www.github.com/nagyist/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d))
+* Ensure watch does not trigger on negated globs ([72668c6](https://www.github.com/nagyist/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d))
+* Set chokidar option ignoreIntial: true by default ([355fc4e](https://www.github.com/nagyist/gulp/commit/355fc4e14840fd26db07fe99183e430e8390ae17))
+* Temporary workaround for facebook/Docusaurus[#257](https://www.github.com/nagyist/gulp/issues/257) ([9f4a2e9](https://www.github.com/nagyist/gulp/commit/9f4a2e96506dec1d85804de8884678e72ffc5aa0))
+* Throw better error when watch parameters are invalid (fixes [#1002](https://www.github.com/nagyist/gulp/issues/1002)) ([409f19a](https://www.github.com/nagyist/gulp/commit/409f19aacb9489491c82013e9dee28f06f49e8d6))
+
+
+### Miscellaneous Chores
+
+* Normalize repository, dropping node <10.13 support ([#2758](https://www.github.com/nagyist/gulp/issues/2758)) ([72668c6](https://www.github.com/nagyist/gulp/commit/72668c61e445c81fad23bc6ed24967a3238a648d))
+
 ## 4.0.0
 
 ### Task system changes
